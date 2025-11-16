@@ -10,6 +10,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <!-- FONTS GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -70,9 +71,9 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="about">About</a>
-            <a class="nav-link" href="gallery">Gallery</a>
-            <a class="nav-link" href="contact">Contact</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -83,23 +84,23 @@
     <div
       class="container-fluid p-5 d-flex justify-content-center align-items-center hero"
     >
-      <section id="hero" class="text-center">
+      <section id="hero" class="text-center p-3">
         <img
           src="images/pict1.png"
           alt="Foto oleh Hobi industri di Unsplash"
           class="img-thumbnail rounded-top-pill d-flex m-auto mb-4"
           style="width: 300px"
         />
-        <h1 class="display-1">Indonesia Maju</h1>
-        <h2 class="display-6">Selamat Datang di Indonesia</h2>
+        <h1 class="display-4">Indonesia Maju</h1>
+        <h2 class="fs-4 fw-light fst-italic">Selamat Datang di Indonesia</h2>
       </section>
     </div>
     <!-- HERO END -->
 
     <!-- ABOUT, GALLERY, AND CONTACT -->
     <div class="container my-5">
-      <section id="about">
-        <h3 class="text-center">About Indonesia</h3>
+      <section id="about" class="pt-5">
+        <h3 class="text-center pt-3">About Indonesia</h3>
         <div class="row justify-content-center fs-5 text-justify">
           <div class="col-md col-lg col-xl-5">
             <p>
@@ -128,9 +129,9 @@
         </div>
       </section>
 
-      <section id="gallery">
+      <section id="gallery" class="pt-5">
+        <h3 class="text-center fst-6 pt-3 pb-3">Gallery</h3>
         <div class="row justify-content-center g-4">
-          <h3 class="text-center fst-6 pt-5">Gallery</h3>
           <div class="col-md-4 col-lg-3">
             <img
               src="images/gallery/1.jpg"
@@ -196,13 +197,70 @@
           </div>
         </div>
       </section>
+
+      <section id="contact" class="pt-5">
+        <h3 class="text-center fst-6 pt-3 pb-3">Contact</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-4 text-center mb-3">
+            <a
+              href="https://github.com/naufallevi"
+              target="_blank"
+              class="text-dark text-decoration-none"
+            >
+              <i
+                class="fa-brands fa-github fa-3x text-dark bg-success-subtle p-1 rounded-circle"
+              ></i>
+              <p class="fs-5 mt-3">naufallevi</p>
+            </a>
+          </div>
+          <div class="col-md-4 text-center mb-3">
+            <a
+              href="mailto:naufal260902@gmail.com"
+              target="_blank"
+              class="text-dark text-decoration-none"
+            >
+              <i
+                class="fa-solid fa-at fa-3x text-dark bg-success-subtle p-1 rounded-circle"
+              ></i>
+              <p class="fs-5 mt-3">naufal260902@gmail.com</p>
+            </a>
+          </div>
+          <div class="col-md-4 text-center mb-3">
+            <a
+              href="https://x.com/naufallevi_"
+              target="_blank"
+              class="text-dark text-decoration-none"
+            >
+              <i
+                class="fa-brands fa-x-twitter fa-3x text-dark bg-success-subtle p-1 rounded-circle"
+              ></i>
+              <p class="fs-5 mt-3">@naufallevi_</p>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
     <!-- ABOUT, GALLERY, AND ABOUT END -->
 
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light text-center py-4">
+      <p class="mb-0">&copy; <span id="year"></span> CodeRow Recodes.</p>
+    </footer>
+
+    <!-- FOOTER END -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/bc9983641e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CUSTOM JS -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
